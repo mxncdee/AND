@@ -1,17 +1,49 @@
-package com.univaq.mwt.headlines.Model;
+package com.univaq.mwt.headlines.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Embedded;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Entity(tableName = "bookmarks")
 public class Article {
 
-    private Source source;
-    private String author;
-    private String title;
-    private String description;
+    @SerializedName("url")
+    @Expose
+    @PrimaryKey
+    @NonNull
     private String url;
+    @SerializedName("source")
+    @Expose
+    @Embedded(prefix = "source_")
+    private Source source;
+    @SerializedName("author")
+    @Expose
+    private String author;
+    @SerializedName("title")
+    @Expose
+    private String title;
+    @SerializedName("description")
+    @Expose
+    private String description;
+    @SerializedName("urlToImage")
+    @Expose
     private String urlToImage;
-    private String publishedAt;
-    private String content;
+    @SerializedName("publishedAt")
+    @Expose
+    private String publishedDate;
 
+    @NonNull
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(@NonNull String url) {
+        this.url = url;
+    }
 
     public Source getSource() {
         return source;
@@ -45,14 +77,6 @@ public class Article {
         this.description = description;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
     public String getUrlToImage() {
         return urlToImage;
     }
@@ -61,20 +85,11 @@ public class Article {
         this.urlToImage = urlToImage;
     }
 
-    public String getPublishedAt() {
-        return publishedAt;
+    public String getPublishedDate() {
+        return publishedDate;
     }
 
-    public void setPublishedAt(String publishedAt) {
-        this.publishedAt = publishedAt;
+    public void setPublishedDate(String publishedDate) {
+        this.publishedDate = publishedDate;
     }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
 }

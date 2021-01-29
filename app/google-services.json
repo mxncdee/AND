@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "82516674714",
+    "firebase_url": "https://headlines-8e5f1.firebaseio.com",
     "project_id": "headlines-8e5f1",
     "storage_bucket": "headlines-8e5f1.appspot.com"
   },
@@ -20,7 +21,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAWsiwLDxg99Ekz7hXT_5aKX-SA6B4TAQE"
+          "current_key": "AIzaSyA0dw444APE8QhUiA0aaccbZHwXTTgQ7iU"
         }
       ],
       "services": {
