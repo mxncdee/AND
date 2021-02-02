@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Headlines</string>
     <string name="Headlines">Headlines MWT \nUnivAQ</string>
-    <!--   <string name="made_with_love">Made with %s in %s</string> -->
     <string name="version">v1.0</string>
 
     <!--START apk url-->
@@ -30,19 +29,19 @@
 
     <!--START message-->
     <string name="msg_error">Something went wrong!</string>
-    <string name="msg_no_news">News not available at the moment!</string>
+    <string name="msg_no_news">News not available!</string>
     <string name="msg_no_result">Result no found</string>
     <string name="msg_no_internet">No internet</string>
     <string name="msg_news_bookmarked">News bookmarked</string>
     <string name="msg_bookmarked_removed">Bookmarked removed</string>
     <string name="msg_no_bookmark">Nothing to show!</string>
     <string name="msg_link_copied">Link copied to clipboard</string>
-    <string name="msg_share">Check out this news app, Headlines at: %s</string>
+    <string name="msg_share">Check out this news app</string>
     <string name="msg_press_again">Press again to exit</string>
     <!--END message-->
 
     <!--START hint-->
-    <string name="hint_search">Search for news</string>
+    <string name="hint_search">Search</string>
     <!--END hint-->
 
     <!--START description-->
@@ -106,7 +105,8 @@
     <string name="settings_acknowledgement_key" translatable="false">acknowledgements</string>
     <string name="settings_acknowledgement_label">Acknowledgements</string>
     <string name="settings_acknowledgement_url" formatted="false" translatable="false">
-        "file:///android_asset/acknowledgement.html"</string>
+       // info page ... "file:///android_asset/acknowledgement.html"
+    </string>
     <!--END setting acknowledgement-->
 
     <!--START setting privacy policy-->
